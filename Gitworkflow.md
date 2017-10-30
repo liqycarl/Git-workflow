@@ -33,7 +33,7 @@ Gitflow is ideally suited for projects that have a scheduled release cycle. This
 6.If an issue in master is detected a hotfix branch is created from master
 7.Once the hotfix is complete it is merged to both develop and master
 
-![]https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509358706581&di=cda96a2856e0eafff896df86039b5166&imgtype=0&src=http%3A%2F%2Fimg.136.la%2Fla14%2F201705147912.png
+![](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509358706581&di=cda96a2856e0eafff896df86039b5166&imgtype=0&src=http%3A%2F%2Fimg.136.la%2Fla14%2F201705147912.png)
 
 
 ### Develop and Master Branches
