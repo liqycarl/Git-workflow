@@ -75,7 +75,7 @@ $ git branch
  ### Feature Branches
 
 Each new feature should reside in its own branch, which can be pushed to the central repository for backup/collaboration. But, instead of branching off of master, feature branches use develop as their parent branch. When a feature is complete, it gets merged back into develop. Features should never interact directly with master.
-![]https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509371815279&di=dd27db7a297ff611af4f7a1cf681165a&imgtype=jpg&src=http%3A%2F%2Fimg1.imgtn.bdimg.com%2Fit%2Fu%3D1980378217%2C4073005284%26fm%3D214%26gp%3D0.jpg
+![](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509371815279&di=dd27db7a297ff611af4f7a1cf681165a&imgtype=jpg&src=http%3A%2F%2Fimg1.imgtn.bdimg.com%2Fit%2Fu%3D1980378217%2C4073005284%26fm%3D214%26gp%3D0.jpg)
 Note that feature branches combined with the develop branch is, for all intents and purposes, the Feature Branch Workflow. But, the Gitflow Workflow doesn’t stop there.
 Feature branches are generally created off to the latest develop branch.
 
@@ -105,7 +105,7 @@ git flow feature finish feature_branch
 
 
 ### Release Branches
-![]https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509372130445&di=5941d2aca75e90f6af0b90864e226737&imgtype=0&src=http%3A%2F%2Fstatic.open-open.com%2Flib%2FuploadImg%2F20150702%2F20150702143552_19.png
+![](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509372130445&di=5941d2aca75e90f6af0b90864e226737&imgtype=0&src=http%3A%2F%2Fstatic.open-open.com%2Flib%2FuploadImg%2F20150702%2F20150702143552_19.png)
 Once develop has acquired enough features for a release (or a predetermined release date is approaching), you fork a release branch off of develop. Creating this branch starts the next release cycle, so no new features can be added after this point—only bug fixes, documentation generation, and other release-oriented tasks should go in this branch. Once it's ready to ship, the release branch gets merged into master and tagged with a version number. In addition, it should be merged back into develop, which may have progressed since the release was initiated.
 
 Using a dedicated branch to prepare releases makes it possible for one team to polish the current release while another team continues working on features for the next release. It also creates well-defined phases of development (e.g., it's easy to say, “This week we're preparing for version 4.0,” and to actually see it in the structure of the repository).
@@ -138,7 +138,7 @@ git flow release finish '0.1.0'
 
 
 ### Hotfix Branches
-![]https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509372247179&di=e7c63938726865fe120de478ff3f08f3&imgtype=0&src=http%3A%2F%2Fimg.136.la%2Fla14%2F201705147912.png
+![](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509372247179&di=e7c63938726865fe120de478ff3f08f3&imgtype=0&src=http%3A%2F%2Fimg.136.la%2Fla14%2F201705147912.png)
 Maintenance or “hotfix” branches are used to quickly patch production releases. Hotfix branches are a lot like release branches and feature branches except they're based on master instead of develop. This is the only branch that should fork directly off of master. As soon as the fix is complete, it should be merged into both master and develop (or the current release branch), and master should be tagged with an updated version number.
 
 Having a dedicated line of development for bug fixes lets your team address issues without interrupting the rest of the workflow or waiting for the next release cycle. You can think of maintenance branches as ad hoc release branches that work directly with master. A hotfix branch can be created using the following methods:
